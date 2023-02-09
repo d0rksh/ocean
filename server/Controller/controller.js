@@ -1,14 +1,6 @@
 const { validationResult } = require("express-validator");
 
-var products = [{
-    id:1,
-    name:'bharath',
-    phone:'6381521731',
-    email:'bharath@gmail.com',
-    amount:'150',
-    size:'Small',
-    color:'Blue'
-}]
+var products = []
 const addProducts = (req,res)=>{
    const result = validationResult(req);
    if(!result.isEmpty()){
